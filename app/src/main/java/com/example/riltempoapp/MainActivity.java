@@ -48,13 +48,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // init views
+        // TODO: consider using view bindings !
         redDaysTv = findViewById(R.id.red_days_tv);
         whiteDaysTv = findViewById(R.id.white_days_tv);
         blueDaysTv = findViewById(R.id.blue_days_tv);
         todayDcv = findViewById(R.id.today_dcv);
         tomorrowDcv = findViewById(R.id.tomorrow_dcv);
-
-
     }
 
     @Override

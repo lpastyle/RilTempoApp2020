@@ -52,8 +52,6 @@ public class HistoryActivity extends AppCompatActivity {
         tempoDatesAdapter = new TempoDatesAdapter(this, tempoDates); // attach a custom adapter
         tempDateRv.setAdapter(tempoDatesAdapter);
 
-        // set progress bar
-
     }
 
     @Override
@@ -65,6 +63,8 @@ public class HistoryActivity extends AppCompatActivity {
 
     private void refreshTempoDates() {
         if (MainActivity.edfApi != null) {
+
+            // show progress whheel
             progressBar.setVisibility(View.VISIBLE);
 
             // get date range
